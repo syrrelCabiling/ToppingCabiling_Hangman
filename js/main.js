@@ -3,7 +3,7 @@
 	console.log('hangman script fired!');
 
 	//create an array to hold the words to be gueesed (MDN ->arrays, MDN const)
-	const words = ["bird","cat","dog","horse","snake"];
+	const words = ["cat","dog","horse","bird","snake"];
 
 	//set up variable stack
 	//css selector
@@ -23,7 +23,7 @@
 function showResetScreen(message) {
 resetScreen.classList.add('show-piece');
 //grab header tag and change uts content => replace it with the message
-resetScreen.querySelector('h3').textContent = message;
+resetScreen.querySelector('h1').textContent = message;
 }
 
 
@@ -36,7 +36,7 @@ resetScreen.querySelector('h3').textContent = message;
 		guessBox.value = "";
 		wrongLetterList.textContent = "";
 		wrongLetterArray = [];
-
+		wordHint.textContent = "";
 	}
 
 	init();
@@ -54,7 +54,7 @@ resetScreen.querySelector('h3').textContent = message;
 		console.log(this.value);
 
 		//if there is no value then exit the game loop -> MDN 'or'
-		if (this.value =="" ||this.value.length < 1 ) {
+		if (this.value == "" || this.value.length < 1 ) {
 			return;
 		}
 
@@ -62,26 +62,28 @@ resetScreen.querySelector('h3').textContent = message;
 
 
 	//set up the win loose paths (if/else)
-	if (!currentWord.includes(this.value)) {
+	if (currentWord.indexOf(this.value) < 0){
+	//if (!currentWord.includes(this.value)) {
 		//loosing path
 		console.log('valid letter!');
 		wrongLetterArray.push(this.value);
 		wrongLetterList.textContent = wrongLetterArray.join(" ");
+
 		document.querySelector(`.wrong${wrongGuesses}`).classList.add('show-piece');
 
 		if (wrongGuesses >= 5) {
-
+			console.log('you lose, looser!');
 		//add incriment values
-		showResetScreen();
+		showResetScreen("Game Over! You ran out of guesses!");
 		} else {
-			//if you loose, rest the screen
+			//if you loose, reset the screen
 			wrongGuesses++;
 		}
 
 		//compare the letter guess to the word to see if it's in there
 	} else {
 		//winning path
-    let matchAgainst = currentWord.split(" ");
+    let matchAgainst = currentWord.split("");
     let hintString = wordHint.textContent.split(" ");
 
     matchAgainst.forEach((letter, index) => {
