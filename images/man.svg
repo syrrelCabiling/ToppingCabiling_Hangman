@@ -1,0 +1,19 @@
+<svg id="man" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.78 217.58">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #010101;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>man</title>
+  <circle id="head" class="cls-1" cx="39.29" cy="30.7" r="29.7"/>
+  <line id="body" class="cls-1" x1="39.19" y1="60.4" x2="39.19" y2="159.15"/>
+  <line id="right_arm" class="cls-1" x1="38.06" y1="100.51" x2="77.16" y2="68.18"/>
+  <line id="left_arm" class="cls-1" x1="39.19" y1="100.51" x2="0.64" y2="68.18"/>
+  <line id="right_leg" class="cls-1" x1="39.36" y1="155.44" x2="77.94" y2="217.05"/>
+  <line id="left_leg" class="cls-1" x1="39.47" y1="155.44" x2="1.44" y2="217.05"/>
+</svg>
