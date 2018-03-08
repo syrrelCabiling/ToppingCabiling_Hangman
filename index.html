@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Hangman</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<main>
+<h1>Let's Play Hangman!</h1>
+<p class="hintString"></p>
+
+
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.74 327.67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <title>scaffold</title>
+  <g id="man">
+    <circle id="head" class="cls-1 wrong0" cx="249.62" cy="67.28" r="29.7"/>
+    <line id="body" class="cls-1 wrong1" x1="249.52" y1="96.98" x2="249.52" y2="195.73"/>
+    <line id="right_arm" class="cls-1 wrong2" x1="248.4" y1="137.09" x2="287.49" y2="104.76"/>
+    <line id="left_arm" class="cls-1 wrong3" x1="249.52" y1="137.09" x2="210.98" y2="104.76"/>
+    <line id="right_leg" class="cls-1 wrong4" x1="249.7" y1="192.02" x2="288.27" y2="253.63"/>
+    <line id="left_leg" class="cls-1 wrong5" x1="249.81" y1="192.02" x2="211.78" y2="253.63"/>
+  </g>
+  <g id="structure">
+    <g id="hangingPost">
+      <path id="post" class="cls-2" d="M297.94,166.21V131.62H135.53l-.75,319.55" transform="translate(-48.32 -129.12)"/>
+      <line id="bottom" class="cls-2" y1="325.17" x2="297.74" y2="325.17"/>
+    </g>
+  </g>
+</svg>
+
+
+<!--<input type="text" class="userGuess">
+<button id="#myButton" class="init-button">run init script</button>-->
+
+
+	<section class="word-and-guess">
+	<p class="current-word"></p>
+	<label for="myLetter">Enter Your Guess!</label>
+	<input id="myLetter" maxlength="1" type="text" class="guess" pattern="[a-zA-Z]">
+	<i class="wrong-letter-label">You guessed these already:</i>
+	<p class="wrong-letters"></p>
+
+	</section>
+
+	<section class="reset-screen">
+		<h1>Game over! You ran out of guesses!</h1>
+		<button>Try Again</button>
+	</section>
+
+		</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>

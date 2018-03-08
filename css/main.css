@@ -1,0 +1,92 @@
+
+h1
+{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 60px;
+	text-align: center;
+}
+
+body
+{
+	width: 980px;
+	margin: 0 auto;
+}
+
+svg
+{
+	width: 450px;
+	margin-left: 250px;
+}
+
+#body,#head,#right_arm,#left_arm,#right_leg,#left_leg
+{
+	opacity: 0;
+	transition: opacity 0.5s ease-in;
+}
+
+label
+{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 40px;
+	float: left;
+	margin-left: 320px;
+	margin-right: 350px;
+	margin-top: 20px;
+}
+
+input
+{
+	clear:both;
+	width: 50px;
+	height: 50px;
+	margin-left: 440px;
+	margin-top: 30px;
+	margin-right: 500px;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+i
+{
+	margin-left: 380px;
+}
+
+.show-piece
+{
+	display: block !important;
+	opacity: 1 !important;
+}
+
+.reset-screen
+{
+	display: none;
+	padding-top: 20%;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 960px;
+	height: 960px;
+	color: white;
+	background-color: rgba(0,0,0,0.9);
+	margin: 0 auto;
+}
+
+.reset-screen button
+{
+	margin-left: 450px;
+
+}
+.current-word
+{
+	float: left;
+	font-size: 18px;
+	font-family: Helvetica;
+	position: absolute;
+	margin: 0 auto;
+}
+
+.wrong-letters
+{
+  font-size: 16px;
+  font-family: sans-serif;
+}

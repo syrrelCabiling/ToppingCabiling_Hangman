@@ -1,30 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 441.6 423.8">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.74 327.67">
   <defs>
     <style>
-      .cls-1, .cls-2 {
-        fill: none;
-        stroke: #000;
-        stroke-miterlimit: 10;
-      }
-
       .cls-1 {
+        fill: none;
+        stroke: #010101;
+        stroke-miterlimit: 10;
         stroke-width: 5px;
-      }
-
-      .cls-2 {
-        stroke-width: 2px;
       }
     </style>
   </defs>
   <title>structure</title>
-  <g id="structure">
-    <g id="hangingPost">
-      <path id="post" class="cls-1" d="M297.94,166.21V131.62H135.53l-.75,319.55" transform="translate(-47.32 -129.12)"/>
-      <line id="bottom" class="cls-1" x1="1" y1="325.17" x2="298.74" y2="325.17"/>
-    </g>
-    <rect id="wordbank" class="cls-2" x="1" y="346.86" width="297.74" height="75.94"/>
-  </g>
-  <g id="letter_line">
-    <line id="letter_line-2" data-name="letter_line" class="cls-2" x1="394.98" y1="325.17" x2="441.6" y2="325.17"/>
+  <g id="hangingPost">
+    <path id="post" class="cls-1" d="M495.94,179.21V144.62H333.53l-.75,319.55" transform="translate(-246.32 -142.12)"/>
+    <line id="bottom" class="cls-1" y1="325.17" x2="297.74" y2="325.17"/>
   </g>
 </svg>
